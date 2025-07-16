@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #f6dafb, #f0d4e4 100%);
+    color: #222;
+}
+header {
+    text-align: center;
+    padding: 60px 20px 30px 20px;
+    background: linear-gradient(120deg, #e3c5e8 0%, #5c385a 100%);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 4px 20px rgba(102,166,255,0.1);
+}
+.profile-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    margin: 10px 0 5px 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.social-links a {
+    color: #222;
+    margin: 0 10px;
+    font-size: 1.7rem;
+    transition: color 0.2s;
+}
+.social-links a:hover {
+    color: #ff6fee;
+}
+#theme-toggle {
+    margin-top: 15px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: none;
+    background: #3e2745;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#theme-toggle:hover {
+    background: #fe89dd;
+    color: #222;
+}
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 16px rgba(102,166,255,0.08);
+    padding: 32px 24px;
+}
+section h2 {
+    color: #8e2e83;
+    margin-bottom: 18px;
+    font-size: 1.7rem;
+    border-left: 5px solid #66a6ff;
+    padding-left: 12px;
+}
+.about, .hobbies {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+.hobby-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 10px;
+}
+.hobby-item {
+    background: #e0eafc;
+    color: #222;
+    padding: 10px 22px;
+    border-radius: 18px;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(102,166,255,0.07);
+    transition: background 0.2s;
+}
+.hobby-item:hover {
+    background: #d55bbf;
+    color: #fff;
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 10px;
+}
+.project-card {
+    background: #d8acd3;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(102,166,255,0.07);
+    padding: 20px;
+    flex: 1 1 250px;
+    min-width: 220px;
+    max-width: 320px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.project-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(102,166,255,0.15);
+}
+.project-title {
+    color: #222;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.project-desc {
+    color: #444;
+    font-size: 1rem;
+}
+input[type="text"] {
+    margin-bottom: 12px;
+    padding: 6px 12px;
+    border-radius: 12px;
+    border: 1px solid #ff66c4;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.2s;
+}
+input[type="text"]:focus {
+    border: 1.5px solid #222;
+}
+@media (max-width: 700px) {
+    section {
+        padding: 18px 6px;
+    }
+    .projects {
+        flex-direction: column;
+    }
+}
+/* Koyu tema */
+.dark-theme {
+    background: linear-gradient(135deg, #232526, #414345 100%);
+    color: #f1f1f1;
+}
+.dark-theme header {
+    background: linear-gradient(120deg, #232526 0%, #414345 100%);
+    color: #fff;
+}
+.dark-theme section {
+    background: #232526;
+    color: #f1f1f1;
+}
+.dark-theme .project-card {
+    background: #2c2f34;
+    color: #f1f1f1;
+}
+.dark-theme .hobby-item {
+    background: #414345;
+    color: #fff;
+}
+.dark-theme .hobby-item:hover {
+    background: #f46dcb;
+    color: #fff;
+}
+.dark-theme input[type="text"] {
+    background: #232526;
+    color: #fff;
+    border: 1px solid #ff66e0;
+}
+.dark-theme input[type="text"]:focus {
+    border: 1.5px solid #fff;
+}
